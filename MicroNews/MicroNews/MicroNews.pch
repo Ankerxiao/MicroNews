@@ -1,0 +1,58 @@
+//
+//  MicroNews.pch
+//  MicroNews
+//
+//  Created by Anker Xiao on 16/7/5.
+//  Copyright © 2016年 AnkerXiao. All rights reserved.
+//
+
+#ifndef MicroNews_pch
+#define MicroNews_pch
+
+#import "BaseVC.h"
+#import "Const.h"
+#import "UIView+ViewHeight.h"
+
+//["推荐",@"笑话",@"美文",@"健康",@"娱乐",@"社会",@"科技",@"体育",@"财经",@"汽车",@"探索",@"美食",@"职场",@"时尚",@"旅游",@"育儿",@"教育"];
+#define TUIJIAN_API @"http://www.weixinkd.com/v2/article/lists.json?catid=0&min_time=1442191201&since_id=3784768&ac=WIFI&cid=c1081&ad=1&phone_code=7340980711e3ad&device_type=2&phone_network=WIFI&channel_code=c1081&client_version=1.8.2&device_id=864922021266689&uuid=d032f7851b474c1e9f4c87e574418a8f&uid=2986826&phone_sim=1&carrier=%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8&sign=dad3c1753f924bbef52d344638b15838" //推荐
+
+#define XIAOHUA_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=2&device_model=iPad&device_platform=iphone&catid=5&sign=2b8f792cfe3b87ae88aed1ad4f84278c&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=62FC0396-014E-4DB0-A342-84A997C036B0"//笑话
+
+#define MEIWEN_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=2&device_model=iPad&device_platform=iphone&catid=2&sign=1e2504bf183155b11b52b0143b32a0b3&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=4F5AC058-5245-4307-8D5B-60558C12499E" //美文
+
+#define JIANKANG_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=2&device_model=iPad&device_platform=iphone&catid=3&sign=e655c6b1e23f58a17bc77fe66dcc6045&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=16F9BBBF-2631-4571-989D-F78B23BADDB0" //健康
+
+#define YULE_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=2&device_model=iPad&device_platform=iphone&catid=19&sign=b5c26401b93d0be5bce93123bcbe549b&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=AD070A24-1C04-49B8-AEC1-1E31DFCA903B" //娱乐
+
+#define SHEHUI_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=2&device_model=iPad&device_platform=iphone&catid=25&sign=cec710358ab7c5d57195869763ef881d&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=608902CB-DE86-4FE2-8764-9D9BB8559FB3"
+
+#define KEJI_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=0&device_model=iPad&device_platform=iphone&catid=10&sign=725ffaba2b113a7072d3dc04ea16d935&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=BFB48FF0-C44B-4EA6-B95B-510EC9D02526"
+
+#define TIYU_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=2&device_model=iPad&device_platform=iphone&catid=1307&sign=f2f2a6676020c32ad4d328320edb7387&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=3745DE66-90FD-48B7-AB7C-6DB0ACD623AB"
+
+#define SHENGHUO @""
+
+#define CAIJIN_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=2&device_model=iPad&device_platform=iphone&catid=11&sign=d7c4e5905651d12999aef1bdc0cbb5f0&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=0CDDBD8D-D494-4D1E-A1E7-EA553016BF58"
+
+#define QICHE_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=0&device_model=iPad&device_platform=iphone&catid=13&sign=c5e101e3c940b33aaa19d42c7970c6ac&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=092E50AB-61CB-4D30-A199-8F9D89E9FD0D"
+
+#define TANSUO_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=0&device_model=iPad&device_platform=iphone&catid=23&sign=98a1f2ae8777b707077feeed1d7d87bd&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=F9DBBD47-2778-49C1-A9AE-E48E5E3AE314"
+
+#define MEISHI_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=2&device_model=iPad&device_platform=iphone&catid=4&sign=b874279cdb1b7a6be4b0d8a9229e3dc1&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=A91FAFBA-9B11-4DB6-8D32-B11D908C1D29"
+
+#define ZHICHANG_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=0&device_model=iPad&device_platform=iphone&catid=6&sign=fa6658772ce959b385b3d85385097bcd&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=6408906F-2722-4264-B06B-A846F1D149C4"
+
+#define SHISHANG_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=0&device_model=iPad&device_platform=iphone&catid=17&sign=9c1aeee3ed54bc087cd93b4b3cac1f21&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=18C900BD-71B0-406D-8A42-7FEE1184E0A5"
+
+#define LVYOU_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=0&device_model=iPad&device_platform=iphone&catid=7&sign=4db89b6596be5a49002a9cfd6a5024f8&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=4DDBACA0-98AC-4496-A632-631743AC1CD6"
+
+#define YUER_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=0&device_model=iPad&device_platform=iphone&catid=8&sign=cbe6698de280560c946cac1a9183d9d7&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=44E25980-05FF-4624-A342-EABC3D72ED9C"
+
+#define JIAOYU_API @"http://www.weixinkd.com/v3/article/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&phone_code=9c0e321e1f550df652f08a74525b6c88&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&cid=80000000&step=0&device_model=iPad&device_platform=iphone&catid=9&sign=ebcd2c6b874cd750742c2b7a31f23004&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=2593CECD-3D4E-448A-BD25-A941C00B49FA"
+
+#
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* MicroNews_pch */
