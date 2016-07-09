@@ -5,16 +5,23 @@
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "f9133891-252f-40bd-8bc4-565b4180d6f0++1820" : 0
+    "f9133891-252f-40bd-8bc4-565b4180d6f0++1820" : 0,
+    "C4FBCDB9A5DE4C6655A625823881217FB4D3562E" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "21523B8C-2AA0-4142-914D-32FE6D8032FF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "f9133891-252f-40bd-8bc4-565b4180d6f0++1820" : ".."
+    "f9133891-252f-40bd-8bc4-565b4180d6f0++1820" : "..",
+    "C4FBCDB9A5DE4C6655A625823881217FB4D3562E" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "MicroNews",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MicroNews.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Ankerxiao\/MicroNews.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4FBCDB9A5DE4C6655A625823881217FB4D3562E"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/10.11.57.11\/Respo",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",

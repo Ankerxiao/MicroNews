@@ -51,12 +51,14 @@
 
 - (void)initTabBarItems
 {
+    NSArray *titleArray = @[@"首页",@"排行榜",@"自媒体",@"我的"];
     NSInteger count = [self.viewControllers count];
     for (int i = 0; i < count; i++)
     {
         UINavigationController *navTemp = self.viewControllers[i];
         UIViewController *vcTemp = [navTemp.viewControllers firstObject];
         vcTemp.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents+i tag:i];
+        vcTemp.tabBarItem = [[UITabBarItem alloc] initWithTitle:titleArray[i] image:[UIImage imageNamed:[NSString stringWithFormat:@"tabbar_icon%d",i]] selectedImage:[UIImage imageNamed:[NSString stringWithFormat:@"tabbar_highlight_icon%d",i]]];
     }
 }
 

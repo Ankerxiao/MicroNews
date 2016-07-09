@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "RootTabBarVC.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <UITabBarControllerDelegate>
 
 @end
 
@@ -20,9 +20,20 @@
 {
     // Override point for customization after application launch.
 //    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[RootTabBarVC alloc] init];
+    UITabBarController *tab = [[RootTabBarVC alloc] init];
+    tab.delegate = self;
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    tab.selectedIndex = [ud integerForKey:@"select"];
+    self.window.rootViewController = tab;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [ud setInteger:tabBarController.selectedIndex forKey:@"select"];
+    [ud synchronize];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -10,11 +10,18 @@
 
 @interface DataModel : JSONModel
 
-@property (nonatomic,copy) NSString *title;
-@property (nonatomic,copy) NSString *thumb;
-@property (nonatomic,copy) NSArray *extra;
-@property (nonatomic,copy) NSString *account_name;
-@property (nonatomic,copy) NSString *wurl;
+@property (nonatomic,copy) NSString <Optional> *title;
+@property (nonatomic,copy) NSString <Optional> *thumb;
+@property (nonatomic,copy) NSArray <Optional> *extra;
+@property (nonatomic,copy) NSString <Optional> *account_name;
+@property (nonatomic,copy) NSString <Optional> *wurl;
+@property (nonatomic,copy) NSString <Optional> *pic;
+@property (nonatomic,copy) NSString <Optional> *avatar;
+@property (nonatomic,copy) NSString <Optional> *name;
+@property (nonatomic,copy) NSString <Optional> *subs;
+@property (nonatomic,copy) NSString <Optional> *good_rate;
+@property (nonatomic,copy) NSString <Optional> *descrip;
+
 //@property (nonatomic,copy) NSString *input_time;
 
 @end
