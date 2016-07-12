@@ -9,8 +9,7 @@
 #import "DetailPageVC.h"
 #import "AppSub.h"
 #import "NetManager.h"
-
-#define XIAO_API @"http://www.weixinkd.com/v3/account/lists.json?access=WIfI&uid=13737897&device_type=1&version_code=303&os_version=9.2.1&device_brand=%E8%8B%B9%E6%9E%9C&device_model=iPad&page=1&catid=5&device_platform=iphone&sign=01ffb4229ac04909f3eb9eda20f3adab&app_version=3.0.3&channel_code=80000000&openudid=9c0e321e1f550df652f08a74525b6c88&uuid=2C13BD59-23FC-47CA-9BC5-D81F5F69A6AB"
+#import "SearchVC.h"
 
 @interface DetailPageVC () <UITableViewDelegate,UITableViewDataSource>
 
@@ -26,13 +25,28 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = [UIColor grayColor];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"<返回" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+    self.navigationItem.leftBarButtonItem.tintColor = [UIColor whiteColor];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"channel_search_icon"] style:UIBarButtonItemStyleDone target:self action:@selector(searchMicroNum)];
+    self.navigationItem.rightBarButtonItem.tintColor = [UIColor whiteColor];
     [self getPic];
+}
+
+- (void)back
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)searchMicroNum
+{
+    SearchVC *svc = [[SearchVC alloc] init];
+    [self.navigationController pushViewController:svc animated:YES];
 }
 
 - (void)getPic
 {
     NetManager *nm = [NetManager shareManager];
-    [nm requestStrUrl:XIAO_API withSuccessBlock:^(id data) {
+    [nm requestStrUrl:self.urlStr withSuccessBlock:^(id data) {
         NSArray *itemsArray = data[@"items"];
         NSMutableArray *tempArray = [NSMutableArray array];
         for(NSDictionary *dict in itemsArray)

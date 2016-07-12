@@ -10,5 +10,6 @@
 
 @interface DetailPageVC : UIViewController
 
+@property (nonatomic,copy) NSString *urlStr;
 
 @end

@@ -1,31 +1,46 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C4FBCDB9A5DE4C6655A625823881217FB4D3562E+++BA60453",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "f9133891-252f-40bd-8bc4-565b4180d6f0++1820" : {
+    "f9133891-252f-40bd-8bc4-565b4180d6f0++1820+++62FB0B0" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "f9133891-252f-40bd-8bc4-565b4180d6f0++1820" : 0,
-    "C4FBCDB9A5DE4C6655A625823881217FB4D3562E" : 0
+    "C4FBCDB9A5DE4C6655A625823881217FB4D3562E+++B79732D" : 0,
+    "f9133891-252f-40bd-8bc4-565b4180d6f0++1820+++62FB0B0" : 0,
+    "C4FBCDB9A5DE4C6655A625823881217FB4D3562E+++BA60453" : 0,
+    "C4FBCDB9A5DE4C6655A625823881217FB4D3562E+++156A009" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "21523B8C-2AA0-4142-914D-32FE6D8032FF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "f9133891-252f-40bd-8bc4-565b4180d6f0++1820" : "..",
-    "C4FBCDB9A5DE4C6655A625823881217FB4D3562E" : ""
+    "C4FBCDB9A5DE4C6655A625823881217FB4D3562E+++B79732D" : "..",
+    "f9133891-252f-40bd-8bc4-565b4180d6f0++1820+++62FB0B0" : "..\/..",
+    "C4FBCDB9A5DE4C6655A625823881217FB4D3562E+++BA60453" : "MicroNews\/",
+    "C4FBCDB9A5DE4C6655A625823881217FB4D3562E+++156A009" : ".."
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "MicroNews",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MicroNews.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MicroNews\/MicroNews.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Ankerxiao\/MicroNews",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4FBCDB9A5DE4C6655A625823881217FB4D3562E+++156A009"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Ankerxiao\/MicroNews.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4FBCDB9A5DE4C6655A625823881217FB4D3562E"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4FBCDB9A5DE4C6655A625823881217FB4D3562E+++B79732D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Ankerxiao\/MicroNews",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4FBCDB9A5DE4C6655A625823881217FB4D3562E+++BA60453"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/10.11.57.11\/Respo",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f9133891-252f-40bd-8bc4-565b4180d6f0++1820"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f9133891-252f-40bd-8bc4-565b4180d6f0++1820+++62FB0B0"
     }
   ]
 }

@@ -42,6 +42,11 @@
     self.desc.text = model.descrip;
 }
 
+- (IBAction)pressBtn:(id)sender
+{
+    NSLog(@"eh---------");
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
