@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleL2;
 @property (weak, nonatomic) IBOutlet UILabel *accountL2;
 @property (weak, nonatomic) IBOutlet UIImageView *picture2;
+@property (weak, nonatomic) IBOutlet UIImageView *shareImage;
 
 - (void)updateCellData:(DataModel *)model;
 

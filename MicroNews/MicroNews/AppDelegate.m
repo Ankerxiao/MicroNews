@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "RootTabBarVC.h"
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+#import "WXApi.h"
 
 @interface AppDelegate () <UITabBarControllerDelegate>
 
@@ -26,6 +29,28 @@
     tab.selectedIndex = [ud integerForKey:@"select"];
     self.window.rootViewController = tab;
     [self.window makeKeyAndVisible];
+    
+//    [ShareSDK registerApp:@"14c44a0215fd7"];
+    [ShareSDK registerApp:@"14c44a0215fd7" activePlatforms:@[@(SSDKPlatformTypeWechat)] onImport:^(SSDKPlatformType platformType) {
+        switch(platformType)
+        {
+            case SSDKPlatformTypeWechat:
+                [ShareSDKConnector connectWeChat:[WXApi class] delegate:self];
+                break;
+            default:
+                break;
+        }
+    } onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo) {
+        switch(platformType)
+        {
+            case SSDKPlatformTypeWechat:
+                [appInfo SSDKSetupWeChatByAppId:@"wx23dcbc687386a81a"
+                                      appSecret:@"bb68d163c3d8517162e856fe1921cceb"];                break;
+            default:
+                break;
+        }
+    }];
+    
     return YES;
 }
 

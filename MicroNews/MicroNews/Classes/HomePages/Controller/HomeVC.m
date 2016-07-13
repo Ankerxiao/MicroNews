@@ -58,8 +58,6 @@
 
 - (void)initNavView
 {
-//    NavBtnListScrollView *btnSV = [[NavBtnListScrollView alloc] initWithBtnTitleArray:@[@"推荐",@"笑话",@"美文",@"健康",@"娱乐",@"社会",@"科技",@"体育",@"财经",@"汽车",@"探索",@"美食",@"职场",@"时尚",@"旅游",@"育儿",@"教育"]];
-//    NavBtnListScrollView *btnSV = [[NavBtnListScrollView alloc] init];
     NSMutableArray *btnTitle = [NSMutableArray array];
     for(NSDictionary *dict in _originalArray)
     {
