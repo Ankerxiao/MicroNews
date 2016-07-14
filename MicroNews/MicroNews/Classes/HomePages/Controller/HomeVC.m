@@ -77,6 +77,7 @@
 - (void)loadDataWithIndex:(NSInteger)index
 {
     NSString *urlStr = [[_originalArray[index] allKeys] firstObject];
+    NSLog(@"%@",urlStr);
     [[NetManager shareManager] requestStrUrl:urlStr withSuccessBlock:^(id data) {
         NSMutableArray *arrayTemp = [NSMutableArray array];
         for(NSDictionary *dict in data[@"items"])

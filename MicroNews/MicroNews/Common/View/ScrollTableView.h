@@ -19,6 +19,9 @@
 - (UINib *)getNibWithTableSection:(NSInteger)section;
 - (NSArray *)getNibArrayWithTableSection:(NSInteger)section;
 
+//上拉加载专用
+- (void)uploadData;
+
 @optional
 - (CGFloat)tableViewCellHeightWithSection:(NSInteger)section andRow:(NSInteger)row;
 

@@ -21,6 +21,7 @@
 @property (nonatomic,copy) NSString <Optional> *subs;
 @property (nonatomic,copy) NSString <Optional> *good_rate;
 @property (nonatomic,copy) NSString <Optional> *descrip;
+@property (nonatomic,copy) NSString <Optional> *url;
 
 //@property (nonatomic,copy) NSString *input_time;
 

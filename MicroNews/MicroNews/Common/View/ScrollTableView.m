@@ -9,6 +9,7 @@
 #import "ScrollTableView.h"
 #import "HomeCell.h"
 #import "HomeCellOne.h"
+#import "MJRefresh.h"
 
 #define TABLEVIEW_TAG_BEGIN (100)
 #define CELL_HEIGHT (100)
@@ -18,7 +19,7 @@
 @interface ScrollTableView () <UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource,UISearchControllerDelegate,UISearchResultsUpdating>
 {
     NSMutableArray *_searchArray;
-    
+    NSInteger _page;
 }
 @property (nonatomic,strong) UIScrollView *scrollV;
 @property (nonatomic,assign) NSInteger tableViewCount;
@@ -77,10 +78,19 @@
         {
             assert("error");
         }
+//        tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData: andTableView:)];
+//        tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+//            
+//        }];
         [_scrollV addSubview:tableView];
     }
     [self addSubview:_scrollV];
 }
+
+//- (void)loadData:(MJRefreshHeader *)header andTableView:(UITableView *)tableView
+//{
+//    [tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:nil];
+//}
 
 - (BOOL)checkDelSelect:(SEL)select
 {
@@ -91,6 +101,7 @@
 {
     UITableView *tableV = [_scrollV viewWithTag:index+TABLEVIEW_TAG_BEGIN];
     [tableV performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:nil];
+    [tableV.mj_header endRefreshing];
 //    [tableV performSelector:@selector(reloadData) withObject:nil afterDelay:NO];
 }
 

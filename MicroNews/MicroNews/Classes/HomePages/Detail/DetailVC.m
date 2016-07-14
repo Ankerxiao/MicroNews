@@ -8,7 +8,7 @@
 
 #import "DetailVC.h"
 
-@interface DetailVC ()
+@interface DetailVC () <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (nonatomic,copy) NSString *urlStr;
 @end
@@ -30,9 +30,9 @@
     // Do any additional setup after loading the view from its nib.
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.urlStr]];
     self.webView.frame = self.view.bounds;
+//    _webView.delegate = self;
     [self.webView loadRequest:request];
 }
-
 
 
 - (void)didReceiveMemoryWarning {
