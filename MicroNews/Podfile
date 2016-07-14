@@ -2,4 +2,5 @@ target 'MicroNews' do
     pod 'AFNetworking'
     pod 'SDWebImage'
     pod 'JSONModel'
+    pod 'MJRefresh'
 end

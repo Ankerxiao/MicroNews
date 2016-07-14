@@ -149,6 +149,7 @@
 		B836FFE81D2A886F006E6097 /* RootTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B836FFE71D2A886F006E6097 /* RootTabBarVC.m */; };
 		B836FFFB1D2A8B27006E6097 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B836FFFA1D2A8B27006E6097 /* HomeVC.m */; };
 		B85A95361D2E7984001F55D2 /* HomeCellOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = B85A95351D2E7984001F55D2 /* HomeCellOne.xib */; };
+		B8DFF6441D37C76B00229EF1 /* SunManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DFF6431D37C76B00229EF1 /* SunManagerVC.m */; };
 		B8E5849F1D308EB100EBAA57 /* user_new_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E5849D1D308EB100EBAA57 /* user_new_icon@2x.png */; };
 		B8E584A01D308EB100EBAA57 /* user_new_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E5849E1D308EB100EBAA57 /* user_new_icon@3x.png */; };
 		B8E584A31D308F2600EBAA57 /* user_mark_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E584A11D308F2600EBAA57 /* user_mark_icon@2x.png */; };
@@ -353,6 +354,8 @@
 		B836FFF91D2A8B27006E6097 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		B836FFFA1D2A8B27006E6097 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		B85A95351D2E7984001F55D2 /* HomeCellOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCellOne.xib; sourceTree = "<group>"; };
+		B8DFF6421D37C76B00229EF1 /* SunManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunManagerVC.h; sourceTree = "<group>"; };
+		B8DFF6431D37C76B00229EF1 /* SunManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunManagerVC.m; sourceTree = "<group>"; };
 		B8E5849D1D308EB100EBAA57 /* user_new_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_new_icon@2x.png"; sourceTree = "<group>"; };
 		B8E5849E1D308EB100EBAA57 /* user_new_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_new_icon@3x.png"; sourceTree = "<group>"; };
 		B8E584A11D308F2600EBAA57 /* user_mark_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_mark_icon@2x.png"; sourceTree = "<group>"; };
@@ -942,6 +945,8 @@
 				B80CF56C1D3522AF00850687 /* AppSub.xib */,
 				B80CF56D1D3522AF00850687 /* AutoMediaVC.h */,
 				B80CF56E1D3522AF00850687 /* AutoMediaVC.m */,
+				B8DFF6421D37C76B00229EF1 /* SunManagerVC.h */,
+				B8DFF6431D37C76B00229EF1 /* SunManagerVC.m */,
 				B80CF56F1D3522AF00850687 /* DetailPageVC.h */,
 				B80CF5701D3522AF00850687 /* DetailPageVC.m */,
 				B80CF5711D3522AF00850687 /* SearchVC.h */,
@@ -1257,6 +1262,7 @@
 				B80CF5741D3522AF00850687 /* AutoMediaVC.m in Sources */,
 				B803151D1D2BD69C00679284 /* DataModel.m in Sources */,
 				B80315211D2BD7A500679284 /* HomeCell.m in Sources */,
+				B8DFF6441D37C76B00229EF1 /* SunManagerVC.m in Sources */,
 				B836FFE51D2A883C006E6097 /* BaseVC.m in Sources */,
 				B836000B1D2A8C75006E6097 /* CreateTabBar.m in Sources */,
 				B80CF5281D351CBA00850687 /* FMDatabaseAdditions.m in Sources */,
@@ -1388,7 +1394,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/MicroNews.pch";
 				INFOPLIST_FILE = MicroNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1415,7 +1421,7 @@
 					"\"SystemConfiguration\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiao.abc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiao.MicroNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1443,7 +1449,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/MicroNews.pch";
 				INFOPLIST_FILE = MicroNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1470,7 +1476,7 @@
 					"\"SystemConfiguration\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiao.abc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiao.MicroNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

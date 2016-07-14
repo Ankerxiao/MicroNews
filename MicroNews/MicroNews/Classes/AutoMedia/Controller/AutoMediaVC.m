@@ -56,6 +56,7 @@
 #import "DetailPageVC.h"
 #import "MySub.h"
 #import "DatabaseManager.h"
+#import "SunManagerVC.h"
 
 @interface AutoMediaVC () <UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
 {
@@ -406,7 +407,10 @@
 
 - (void)pressSub
 {
-    NSLog(@"--------------");
+    SunManagerVC *smvc = [[SunManagerVC alloc] init];
+    smvc.title = @"订阅管理";
+    
+    [self.navigationController pushViewController:smvc animated:YES];
 }
 
 - (void)pressRightAdd
