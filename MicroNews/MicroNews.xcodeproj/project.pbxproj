@@ -154,6 +154,15 @@
 		B8E584A01D308EB100EBAA57 /* user_new_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E5849E1D308EB100EBAA57 /* user_new_icon@3x.png */; };
 		B8E584A31D308F2600EBAA57 /* user_mark_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E584A11D308F2600EBAA57 /* user_mark_icon@2x.png */; };
 		B8E584A41D308F2600EBAA57 /* user_mark_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E584A21D308F2600EBAA57 /* user_mark_icon@3x.png */; };
+		B8E7B3891D38FDC20055E8EB /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7B3871D38FDC20055E8EB /* LoginVC.m */; };
+		B8E7B38A1D38FDC20055E8EB /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8E7B3881D38FDC20055E8EB /* LoginVC.xib */; };
+		B8E7B38D1D38FE800055E8EB /* login_qq_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7B38B1D38FE800055E8EB /* login_qq_icon@2x.png */; };
+		B8E7B38E1D38FE800055E8EB /* login_qq_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E7B38C1D38FE800055E8EB /* login_qq_icon@3x.png */; };
+		B8E7B3901D390AE20055E8EB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E7B38F1D390AE20055E8EB /* libz.tbd */; };
+		B8E7B3921D390AFF0055E8EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E7B3911D390AFF0055E8EB /* CoreGraphics.framework */; };
+		B8E7B3941D390B0F0055E8EB /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E7B3931D390B0F0055E8EB /* libiconv.tbd */; };
+		B8E7B3971D390B300055E8EB /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8E7B3951D390B300055E8EB /* TencentOpenApi_IOS_Bundle.bundle */; };
+		B8E7B3981D390B300055E8EB /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E7B3961D390B300055E8EB /* TencentOpenAPI.framework */; };
 		FF0BFC8C0E346844E5AD68DB /* libPods-MicroNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F375750B9B1AFC316AB6506 /* libPods-MicroNews.a */; };
 /* End PBXBuildFile section */
 
@@ -360,6 +369,16 @@
 		B8E5849E1D308EB100EBAA57 /* user_new_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_new_icon@3x.png"; sourceTree = "<group>"; };
 		B8E584A11D308F2600EBAA57 /* user_mark_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_mark_icon@2x.png"; sourceTree = "<group>"; };
 		B8E584A21D308F2600EBAA57 /* user_mark_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_mark_icon@3x.png"; sourceTree = "<group>"; };
+		B8E7B3861D38FDC20055E8EB /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		B8E7B3871D38FDC20055E8EB /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		B8E7B3881D38FDC20055E8EB /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		B8E7B38B1D38FE800055E8EB /* login_qq_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_qq_icon@2x.png"; sourceTree = "<group>"; };
+		B8E7B38C1D38FE800055E8EB /* login_qq_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_qq_icon@3x.png"; sourceTree = "<group>"; };
+		B8E7B38F1D390AE20055E8EB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B8E7B3911D390AFF0055E8EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B8E7B3931D390B0F0055E8EB /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		B8E7B3951D390B300055E8EB /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		B8E7B3961D390B300055E8EB /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		D6A60B3EC26D6472A649A1F6 /* Pods-MicroNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MicroNews/Pods-MicroNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -368,16 +387,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B80CF52E1D351CCF00850687 /* libsqlite3.tbd in Frameworks */,
-				B817F74F1D36716B00713B05 /* CoreText.framework in Frameworks */,
-				B817F74D1D36716300713B05 /* libstdc++.tbd in Frameworks */,
-				B817F74B1D36715A00713B05 /* JavaScriptCore.framework in Frameworks */,
 				B817F7491D36715400713B05 /* Security.framework in Frameworks */,
+				B8E7B3941D390B0F0055E8EB /* libiconv.tbd in Frameworks */,
+				B8E7B3981D390B300055E8EB /* TencentOpenAPI.framework in Frameworks */,
+				B817F7421D36712E00713B05 /* SystemConfiguration.framework in Frameworks */,
+				B8E7B3921D390AFF0055E8EB /* CoreGraphics.framework in Frameworks */,
+				B80CF52E1D351CCF00850687 /* libsqlite3.tbd in Frameworks */,
+				B817F7441D36713F00713B05 /* CoreTelephony.framework in Frameworks */,
+				B817F74D1D36716300713B05 /* libstdc++.tbd in Frameworks */,
+				B8E7B3901D390AE20055E8EB /* libz.tbd in Frameworks */,
+				B817F74F1D36716B00713B05 /* CoreText.framework in Frameworks */,
+				B817F74B1D36715A00713B05 /* JavaScriptCore.framework in Frameworks */,
 				B817F7471D36714E00713B05 /* libz.1.2.5.tbd in Frameworks */,
 				B817F7451D36714700713B05 /* libicucore.tbd in Frameworks */,
-				B817F7441D36713F00713B05 /* CoreTelephony.framework in Frameworks */,
 				B817F7431D36713600713B05 /* QuartzCore.framework in Frameworks */,
-				B817F7421D36712E00713B05 /* SystemConfiguration.framework in Frameworks */,
 				B817F73E1D3670FE00713B05 /* libYixinSDK.a in Frameworks */,
 				B817F72D1D3670FE00713B05 /* ShareSDK.framework in Frameworks */,
 				B817F7391D3670FE00713B05 /* RennSDK.framework in Frameworks */,
@@ -411,6 +434,9 @@
 		4C1EE80EDC8AC9EE5DEAAD34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8E7B3931D390B0F0055E8EB /* libiconv.tbd */,
+				B8E7B3911D390AFF0055E8EB /* CoreGraphics.framework */,
+				B8E7B38F1D390AE20055E8EB /* libz.tbd */,
 				B817F74E1D36716B00713B05 /* CoreText.framework */,
 				B817F74C1D36716300713B05 /* libstdc++.tbd */,
 				B817F74A1D36715A00713B05 /* JavaScriptCore.framework */,
@@ -773,6 +799,8 @@
 		B836FFBC1D2A8677006E6097 = {
 			isa = PBXGroup;
 			children = (
+				B8E7B3951D390B300055E8EB /* TencentOpenApi_IOS_Bundle.bundle */,
+				B8E7B3961D390B300055E8EB /* TencentOpenAPI.framework */,
 				B836FFC71D2A8677006E6097 /* MicroNews */,
 				B836FFC61D2A8677006E6097 /* Products */,
 				39E4B21C9A3573628759E6ED /* Pods */,
@@ -996,6 +1024,11 @@
 		B836FFF51D2A8AEF006E6097 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B8E7B38B1D38FE800055E8EB /* login_qq_icon@2x.png */,
+				B8E7B38C1D38FE800055E8EB /* login_qq_icon@3x.png */,
+				B8E7B3861D38FDC20055E8EB /* LoginVC.h */,
+				B8E7B3871D38FDC20055E8EB /* LoginVC.m */,
+				B8E7B3881D38FDC20055E8EB /* LoginVC.xib */,
 				B82F115E1D2FE8670066E56F /* OneCell.xib */,
 			);
 			path = View;
@@ -1135,6 +1168,7 @@
 				B85A95361D2E7984001F55D2 /* HomeCellOne.xib in Resources */,
 				B82F111C1D2FDD330066E56F /* user_set_icon@3x.png in Resources */,
 				B836FFD51D2A8677006E6097 /* Assets.xcassets in Resources */,
+				B8E7B3971D390B300055E8EB /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				B82F11271D2FDD9A0066E56F /* user_good_icon@2x.png in Resources */,
 				B817F73D1D3670FE00713B05 /* read_me.txt in Resources */,
 				B80CF55F1D35203900850687 /* 科技.png in Resources */,
@@ -1155,10 +1189,13 @@
 				B82F115F1D2FE8670066E56F /* OneCell.xib in Resources */,
 				B82F11501D2FDE330066E56F /* tabbar_highlight_icon2@2x.png in Resources */,
 				B8E584A01D308EB100EBAA57 /* user_new_icon@3x.png in Resources */,
+				B8E7B38A1D38FDC20055E8EB /* LoginVC.xib in Resources */,
 				B80CF5601D35203900850687 /* 笑话.png in Resources */,
 				B82F11231D2FDD830066E56F /* user_interest_icon_new@2x.png in Resources */,
 				B80315221D2BD7A500679284 /* HomeCell.xib in Resources */,
+				B8E7B38E1D38FE800055E8EB /* login_qq_icon@3x.png in Resources */,
 				B80CF54C1D35203900850687 /* channel_search_icon@2x.png in Resources */,
+				B8E7B38D1D38FE800055E8EB /* login_qq_icon@2x.png in Resources */,
 				B80CF54D1D35203900850687 /* channel_search_icon@3x.png in Resources */,
 				B82F115C1D2FDE330066E56F /* tabbar_icon3@2x.png in Resources */,
 				B82F110C1D2FD7640066E56F /* user_header_icon@2x.png in Resources */,
@@ -1245,6 +1282,7 @@
 				B803152B1D2BDB0700679284 /* NetManager.m in Sources */,
 				B80CF57F1D3522BE00850687 /* AMView.m in Sources */,
 				B80CF5271D351CBA00850687 /* FMDatabase.m in Sources */,
+				B8E7B3891D38FDC20055E8EB /* LoginVC.m in Sources */,
 				B80CF5751D3522AF00850687 /* DetailPageVC.m in Sources */,
 				B80CF5261D351CBA00850687 /* DatabaseManager.m in Sources */,
 				B83600071D2A8B6B006E6097 /* RankVC.m in Sources */,
@@ -1391,6 +1429,7 @@
 					"$(PROJECT_DIR)/MicroNews/ShareSDK/Support/PlatformSDK/QQSDK",
 					"$(PROJECT_DIR)/MicroNews/ShareSDK/Support/PlatformSDK/RenRenSDK",
 					"$(PROJECT_DIR)/MicroNews/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/MicroNews.pch";
 				INFOPLIST_FILE = MicroNews/Info.plist;
@@ -1446,6 +1485,7 @@
 					"$(PROJECT_DIR)/MicroNews/ShareSDK/Support/PlatformSDK/QQSDK",
 					"$(PROJECT_DIR)/MicroNews/ShareSDK/Support/PlatformSDK/RenRenSDK",
 					"$(PROJECT_DIR)/MicroNews/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/MicroNews.pch";
 				INFOPLIST_FILE = MicroNews/Info.plist;

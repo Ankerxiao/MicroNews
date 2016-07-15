@@ -12,7 +12,7 @@
 
 @interface DatabaseManager : NSObject
 
-+ (instancetype)sharedDatabaseManager;
++ (id)sharedDatabaseManager;
 - (instancetype)initWithDBName:(NSString *)strName andTableName:(NSString *)strTableName andField:(id)fieldName,...;
 - (BOOL)insertDataWithArray:(NSArray *)array;
 - (BOOL)tableIsNull;//表是否为空

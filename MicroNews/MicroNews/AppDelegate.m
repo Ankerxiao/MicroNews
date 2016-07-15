@@ -12,6 +12,8 @@
 #import <ShareSDKConnector/ShareSDKConnector.h>
 #import "WXApi.h"
 
+#import <TencentOpenAPI/TencentOAuth.h>
+
 @interface AppDelegate () <UITabBarControllerDelegate>
 
 @end
@@ -59,6 +61,15 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     [ud setInteger:tabBarController.selectedIndex forKey:@"select"];
     [ud synchronize];
+}
+
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    return [TencentOAuth HandleOpenURL:url];
+}
+
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [TencentOAuth HandleOpenURL:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

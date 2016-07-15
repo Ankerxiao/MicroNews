@@ -415,7 +415,7 @@
 
 - (void)pressRightAdd
 {
-    
+    [self pressSub];
 }
 
 - (void)didReceiveMemoryWarning {

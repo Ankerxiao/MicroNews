@@ -8,14 +8,13 @@
 
 #import "AppSub.h"
 #import <UIImageView+WebCache.h>
+#import "DatabaseManager.h"
 
 @interface AppSub ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageV;
 @property (weak, nonatomic) IBOutlet UILabel *nameL;
 @property (weak, nonatomic) IBOutlet UILabel *subsAndGoodRateL;
-
-//@property (weak, nonatomic) IBOutlet UILabel *good_rateL;
 @property (weak, nonatomic) IBOutlet UILabel *desc;
 
 
@@ -42,9 +41,14 @@
     self.desc.text = model.descrip;
 }
 
+#pragma mark 添加订阅，存入数据库
 - (IBAction)pressBtn:(id)sender
 {
     NSLog(@"eh---------");
+    //数据库操作
+    DatabaseManager *dbm = [DatabaseManager sharedDatabaseManager];
+    dbm = [[DatabaseManager alloc] initWithDBName:@"sub.db" andTableName:@"subm" andField:@"imageUrl",@"name",@"content",nil];
+    [dbm insertDataWithArray:@[@[self.model.avatar,self.nameL.text,self.desc.text]]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

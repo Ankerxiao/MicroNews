@@ -7,6 +7,7 @@
 //
 
 #import "MyVC.h"
+#import "LoginVC.h"
 
 @interface MyVC () <UITableViewDelegate,UITableViewDataSource>
 
@@ -32,8 +33,6 @@
         _tableV = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height-64) style:UITableViewStylePlain];
         _tableV.delegate = self;
         _tableV.dataSource = self;
-//        _tableV.tableHeaderView.userInteractionEnabled = YES;
-//        _tableV.tableHeaderView = [self tableHeaderView];
     }
     return _tableV;
 }
@@ -88,11 +87,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *str = @"cellID";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:str];
-//    if(!cell)
-//    {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:str];
-//    }
     if(indexPath.section == 0)
     {
         static NSString *str2 = @"cell";
@@ -139,9 +133,6 @@
         return cell;
 
     }
-//    cell.textLabel.text = _dataArray[indexPath.section][indexPath.row];
-//    cell.imageView.image = [UIImage imageNamed:self.picArray[indexPath.section][indexPath.row]];
-//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return nil;
 }
 
@@ -171,7 +162,29 @@
     [v addSubview:imageV];
     [v addSubview:label];
     [v addSubview:btn];
+    
+    //给V添加一个手势 用来注册和登录
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pressLogin:)];
+//    v.userInteractionEnabled = YES;
+//    [v addGestureRecognizer:tap];
     return v;
+}
+//
+//- (void)pressLogin:(UITapGestureRecognizer *)tap
+//{
+//    NSLog(@"-----");
+//    UIView *vw = tap.view;
+//    vw.backgroundColor = [UIColor grayColor];
+//}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.section == 0)
+    {
+        LoginVC *lrvc = [[LoginVC alloc] init];
+        lrvc.title = @"登录微看点";
+        [self.navigationController pushViewController:lrvc animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -20,7 +20,7 @@
 @implementation DatabaseManager
 
 //单例
-+ (instancetype)sharedDatabaseManager
++ (id)sharedDatabaseManager
 {
     static DatabaseManager *manager = nil;
     @synchronized (self)
@@ -134,24 +134,27 @@
     }
     //拼接sql语句
     NSString *sqlStr = [NSString stringWithFormat:@"insert into %@(%@) values (%@)",_strTableName,paramStr,markStr];
+    NSLog(@"%@",markStr);
+    NSLog(@"%@",array);
     
     BOOL isSuccess = NO;
-    for(NSDictionary *dict in array)
+    for(NSArray *arr in array)
     {
         NSArray *pa = [paramStr componentsSeparatedByString:@","];
+        NSLog(@"%@",pa);
         switch (pa.count)
         {
             case 2:
-                isSuccess = [_dababase executeUpdate:sqlStr,dict[pa[0]],dict[pa[1]]];
+                isSuccess = [_dababase executeUpdate:sqlStr,arr[0],arr[1]];
                 break;
             case 3:
-                isSuccess = [_dababase executeUpdate:sqlStr,dict[pa[0]],dict[pa[1]],dict[pa[2]]];
+                isSuccess = [_dababase executeUpdate:sqlStr,arr[0],arr[1],arr[2]];
                 break;
             case 4:
-                isSuccess = [_dababase executeUpdate:sqlStr,dict[pa[0]],dict[pa[1]],dict[pa[2]],dict[pa[3]]];
+                isSuccess = [_dababase executeUpdate:sqlStr,arr[0],arr[1],arr[2],arr[3]];
                 break;
             case 5:
-                isSuccess = [_dababase executeUpdate:sqlStr,dict[pa[0]],dict[pa[1]],dict[pa[2]],dict[pa[3]],dict[pa[4]]];
+                isSuccess = [_dababase executeUpdate:sqlStr,arr[0],arr[1],arr[2],arr[3],arr[4]];
                 break;
             default:
                 break;
